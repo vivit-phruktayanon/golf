@@ -47,7 +47,7 @@ const BirthdayPage = () => {
           <h1 className="font-display text-5xl md:text-7xl text-foreground leading-tight mb-4 drop-shadow-sm">
             Happy Birthday,
             <br />
-            My Beautiful Flower 🌷
+            ดื้อๆของเค้า 🌷
           </h1>
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-md mx-auto animate-float-gentle">
             You make my world bloom every single day.
@@ -169,19 +169,21 @@ const BirthdayPage = () => {
             <p className="font-body text-foreground leading-relaxed text-base space-y-4">
               <span className="block mb-4">My N.Golf,</span>
               <span className="block mb-4">
-                Every day with you feels like spring — warm, beautiful, and full of life.
-                You are the most precious flower in my garden, and I am so grateful
-                that the universe brought us together.
+                ทุกวันกับดื้อๆเหมือนเล่นรถไฟเหาะเลย — สนุก มีความสุข และเต็มไปด้วยความตื่นเต้น
+                ดื้อๆคือสิ่งที่ดีที่สุดที่เข้ามาในปีที่ผ่านมาของเค้าเลย และฉันรู้สึกขอบคุณเสมอ
+                ที่โชคชะตาพาเราให้มาเจอกัน
               </span>
               <span className="block mb-4">
-                On your special day, I want you to know that my love for you grows
-                deeper with every passing moment. You are my sunshine, my inspiration,
-                and my forever.
+                ในวันพิเศษของดื้อ เค้าอยากให้รู้ว่าความรักของเค้าที่มีให้ดื้อ
+                เติบโตลึกซึ้งขึ้นในทุกช่วงเวลา ดื้อคือกำลังใจ แรงบันดาลใจ
+                และเป็นดื้อของเค้าตลอดไป
               </span>
               <span className="block mb-4">
-                Happy Birthday, my love. May this year bring you all the happiness
-                and dreams your beautiful heart desires.
+                สุขสันต์วันเกิดนะที่รัก ขอให้ปีนี้นำพาความสุข
+                และเติมเต็มทุกความฝันที่หัวใจอันงดงามของดื้อๆปรารถนา
+                โตขึ้นแล้วต้องโตเป็นผู้ใหญ่น้า ต้องควบคุมอารมณ์ให้ได้น้า
               </span>
+
               <span className="block text-right font-display text-2xl text-primary mt-6">
                 รักนะ ดื้อๆของเค้า 💕
               </span>
