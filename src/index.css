@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 50% 97%;
+    --foreground: 345 30% 25%;
+
+    --card: 350 40% 96%;
+    --card-foreground: 345 30% 25%;
+
+    --popover: 30 50% 97%;
+    --popover-foreground: 345 30% 25%;
+
+    --primary: 345 55% 70%;
+    --primary-foreground: 30 50% 97%;
+
+    --secondary: 20 60% 90%;
+    --secondary-foreground: 345 30% 25%;
+
+    --muted: 270 30% 92%;
+    --muted-foreground: 345 20% 50%;
+
+    --accent: 270 40% 85%;
+    --accent-foreground: 345 30% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 345 30% 88%;
+    --input: 345 30% 88%;
+    --ring: 345 55% 70%;
+
+    --radius: 1rem;
+
+    --peach: 20 80% 88%;
+    --cream: 40 60% 95%;
+    --dusty-rose: 345 40% 70%;
+    --lavender: 270 40% 88%;
+    --rose-gold: 350 60% 75%;
+    --soft-pink: 350 80% 92%;
+    --petal: 345 70% 85%;
+    --sunlight: 40 80% 90%;
+
+    --font-display: 'Dancing Script', cursive;
+    --font-body: 'Quicksand', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+/* Petal animation */
+@keyframes petal-fall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) translateX(80px) rotate(360deg);
+    opacity: 0.3;
+  }
+}
+
+@keyframes petal-sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(30px); }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes bloom {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px hsl(345 55% 70% / 0.2); }
+  50% { box-shadow: 0 0 40px hsl(345 55% 70% / 0.4); }
+}
+
+@keyframes walk-left {
+  0% { transform: translateX(-60px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes walk-right {
+  0% { transform: translateX(60px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-petal-fall {
+  animation: petal-fall linear infinite;
+}
+
+.animate-float-gentle {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+.animate-bloom {
+  animation: bloom 1s ease-out forwards;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--cream));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--petal));
+  border-radius: 3px;
+}
